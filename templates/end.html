@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Moneyball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="static/css/styleEND.css">
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  {% block main %}
+  <div class="wrapper">
+    <div class="hero text-center">
+      <h1>Final Thoughts</h1>
+      <p></p>
+    </div>
+    <div class="container">
+      
+        <div class="col-md-10">
+          <div id="inro" class="">
+            <h2>Final Analysis</h2>
+            <p>So is there any “there, there” when it comes to Oakland’s Moneyball approach, or is its success merely a mirage 
+              bolstered by a compelling book a feature film starring Brad Pitt?<br>
+              <br>
+              Well, the answer to this is yes and no, and really depends on your personal perspective.<br>
+              <br> 
+              Hall of Fame pitcher Tom Seaver famously said, “there are only two places in this league: first place and no place.” 
+              In the eyes of Tom Terrific and many fans, Oakland’s zero championships makes Moneyball a failure. But, it’s not that 
+              simple.<br>
+              <br>
+              The Oakland Athletics play in objectively the worst ballpark in MLB, share a market with the “sexier” San Francisco 
+              Giants, and thus are hamstrung with a tighter budget and smaller margin of error for success. Let’s look at some numbers.<br>
+              <br>
+            </P>
+              <h3>Wins</h3>
+            <p>
+              Over the 20-year period we examined, the Athletics won 1,729 regular season games – an average of 86.5 per season. 
+              The average MLB team over those two decades registered just 82 wins.
+            </p>
+              <h3>Cost per Win</h3>
+              <p>
+              The Athletics’ cost per win (total team salary expenditures/team wins) came out to $686,427. At first glance one 
+              would say wins are expensive. Consider though that average cost per win leaguewide during this period was $1,122,739. 
+              In short, the Athletics spent 31 percent less to win about 4.5 more games per season as compared to the rest of the 
+              league.
+              <br> 
+              When considering the disadvantages the Athletics franchise faces, objectively, it’s not unreasonable to conclude 
+              that the Moneyball approach has been a success over its two decades of implementation.
+              <br>
+            </p>
+        </div>
+        <div class="4-col">  
+            <h2>Resources</h2>
+            <p>The following resources were  employed:</p>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>JavaScript library: <a href="https://402.ecma-international.org/1.0/">ECMAScript Internationalization API</a>	</li>
+            <li>Python</li>
+            <li>Python Pandas</li>
+            <li>Flask</li>
+            <li>SQL</li>
+        </div>
+        <div class="4-col">  
+          <h2>Data Sources:</h2>
+          <p>The following data sources were  employed:</p>
+          <li><a href="https://www.kaggle.com/open-source-sports/baseball-databank?select=HallOfFame.csv">Kaggle:Baseball Databank</a>Baseball Databank is a compilation of historical baseball data in aconvenient, tidy format, distributed under Open Data terms.
+            This version of the Baseball databank was downloaded from <a href="http://www.seanlahman.com/baseball-archive/statistics/">Sean Lahman's website</a>. Data sets employed were:	</li>
+          
+         
+                  <li style=margin-left:10%><a href= "https://www.kaggle.com/open-source-sports/baseball-databank?select=Teams.csv">Teams.csv</a> (537 KB, Total columns available: 48)</li>
+                  <li style=margin-left:10%><a href= "https://www.kaggle.com/open-source-sports/baseball-databank?select=Salaries.csv">Saleries.csv</a> (756 KB, Total columns available: 5)</li>
+                    
+    
+      </div>
+      &nbsp;&nbsp; 
+      <h1></h>
+      <h1></h>
+      <h1></h>
+      <h1></h>
+      <h1></h>
+      <h1></h>
+      &nbsp;&nbsp; 
+      &nbsp;&nbsp; 
+
+
+
+
+      {% endblock %} 
+    </div>
+    <footer class="footer">
+      <span>Project Moneyball &copy; 2021</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>

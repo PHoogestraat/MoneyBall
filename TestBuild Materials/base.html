@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS goes here -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Website Title</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    {% block main %}
+    <h1>
+        Hello World!
+    </h1>
+    {% endblock %}
+
+    <!-- ...and JavaScript goes here -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.4.0/d3.js" integrity="sha512-nUKG/5WjpjShkRZ7hidJ+GhtjnTbQV+IGf0c3KZCsOyqLPSzzzHzJ6QE57GPFA/WsE6nOKuGDlSXlrBxGELtOA==" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

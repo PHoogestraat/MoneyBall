@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cost Per Win</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/d3Style.css">
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  {% block main %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <hr width="10px"> 
+        <div class = "greenbox">
+            <h1 style="text-align:center">Moneyball: A 20 Year Glance</h1>
+        </div>
+      </div>
+    </div>
+        
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+            <h5>Money Spent</h5>
+            <!-- <select id="selDataset" onchange="optionChanged(value)"></select> -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="scatter">
+        <div class="chart">
+          <!-- Append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="article">
+          <h2> </h2>
+          <h3>Investigating Cost Per Win </h3>         
+          <div class=maintext> 
+            <p> This scatterplot gives an overview of how effectively each of Major League Baseball’s 30 teams were in getting the most
+                 “bang for their buck” over the last 20 seasons (excluding the shortened 2020 season). With 600 data points, this 
+                 is merely an overview, and shouldn’t be relied upon for in-depth analysis. The actual cost per win data, broken down 
+                 by team and year, is available elsewhere on this site.
+                 <br>  
+                It is instructive to notice however that majority of Oakland’s teams during this 20-year period (as denoted by the 
+                Kelly Green plots), populate the upper right-hand portion of the chart. As a handy comparison, the 20 World Series 
+                winning teams from this period are indicated by pink plots on the chart. Further analysis of Oakland’s success, as 
+                compared to the league as a whole is available on the Final Analysis page.
+                <br>
+                </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+  <!-- Footer-->
+  <div class="footerX">
+    <p style="text-align: center"><b>Project Moneyball &copy; 2021</b></p>
+  </div>
+  </div>    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="static/js/mlb_scatter.js"></script>
+
+</body>
+
+</html>
