@@ -1,4 +1,4 @@
-# <div align = "center"> Project 2: Group C</div>
+# <div align = "center"> </div>
 
 ![coverArt1.png](images/coverArt1.png)
 
