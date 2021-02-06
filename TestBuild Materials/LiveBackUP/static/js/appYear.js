@@ -69,7 +69,7 @@ function winColor(winDataColor){
 
 // Function to draw chart
 function drawChart(yearPickedInDropDown) {
-  d3.json("/year.json").then(function(rawData){
+  d3.json("/mlb_data").then(function(rawData){
  
       console.log(rawData)
 
@@ -332,7 +332,7 @@ function buckets (rValues, xCord, yCord ){
 // Import Data +++++++++++++++++++++++++++                                  For Pull down list
 function init(){
   
-  d3.json("/year.json").then(function(raw) {
+  d3.json("/mlb_data").then(function(raw) {
       console.log("raw")
       console.log(raw)
 

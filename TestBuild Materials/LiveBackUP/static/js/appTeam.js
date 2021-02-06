@@ -69,7 +69,7 @@ function winColor(winDataColor){
 
 // // Function to draw chart
 function drawChart(teamPickedInDropDown) {
-  d3.json("/year.json").then(function(rawData){
+  d3.json("/mlb_data").then(function(rawData){
   
       //console.log(`team picked in Drop down: ${rawData}`)
     
@@ -127,8 +127,11 @@ function drawChart(teamPickedInDropDown) {
       chartGroup.html("") 
       chartGroup.append("g")
           .classed("x-axis", true)
-          .attr("transform", `translate(0, ${height})`)
+          .attr("transform", `translate(0, ${height})`) 
           .call(bottomAxis);
+
+
+
           
       chartGroup.append("g")
           .call(leftAxis);
@@ -285,7 +288,7 @@ function gridPlotY(xMax, xMin, yAve, yMax, yMin){
   var dataArray = [
         // { x: xAve, y: yMax },
         // { x: xAve, y: yMin },
-        { x: xMax, y: yAve },
+        { x: xMax, y: (yAve) },
         { x: xMin, y: yAve },
 
   ];
@@ -317,7 +320,7 @@ function gridPlotY(xMax, xMin, yAve, yMax, yMin){
 // Import Data +++++++++++++++++++++++++++
 function init(){
 
-    d3.json("/year.json").then(function(raw) { 
+    d3.json("/mlb_data").then(function(raw) { 
         console.log("raw data from first pull down selection")
         console.log(raw)
 
