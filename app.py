@@ -1,26 +1,26 @@
 # import dependencies
 from flask import Flask, render_template, jsonify
 # import data
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
+#import sqlalchemy
+#from sqlalchemy.ext.automap import automap_base
+#from sqlalchemy.orm import Session
+#from sqlalchemy import create_engine, func
 
 
 # #################################################
 # # Database Setup
 # #################################################
-engine = create_engine("postgresql://postgres:postgres@localhost:5432/MLB_DB")
+#engine = create_engine("postgresql://postgres:postgres@localhost:5432/MLB_DB")
 
 # reflect an existing database into a new model
-Base = automap_base()
+#Base = automap_base()
 # reflect the tables
-Base.prepare(engine, reflect=True)
-print(Base.classes.keys())
+#Base.prepare(engine, reflect=True)
+#print(Base.classes.keys())
 # Save reference to the table
-mlb_data = Base.classes.mlb_data
-teams = Base.classes.teams
-salaries = Base.classes.salaries
+#mlb_data = Base.classes.mlb_data
+#teams = Base.classes.teams
+#salaries = Base.classes.salaries
 
 app = Flask(__name__, 
             static_folder='static',

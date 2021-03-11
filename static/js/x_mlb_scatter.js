@@ -15,7 +15,7 @@ var svg = d3.select(".chart")
 
 // call to json 
 
-d3.json("/year.json").then(function(data) {
+d3.json("").then(function(data) {
   data.forEach(d => {
     d.wins = +d.wins;
     d.cost_per_win = +d.cost_per_win;

@@ -69,7 +69,7 @@ function winColor(winDataColor){
 
 // // Function to draw chart
 function drawChart(teamPickedInDropDown) {
-  d3.json("static/data/year.json").then(function(rawData){
+  d3.json("assets/data/year.json").then(function(rawData){
   
       //console.log(`team picked in Drop down: ${rawData}`)
     
@@ -320,7 +320,7 @@ function gridPlotY(xMax, xMin, yAve, yMax, yMin){
 // Import Data +++++++++++++++++++++++++++
 function init(){
 
-    d3.json("static/data/year.json").then(function(raw) { 
+    d3.json("assets/data/year.json").then(function(raw) { 
         console.log("raw data from first pull down selection")
         console.log(raw)
 
