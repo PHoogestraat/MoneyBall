@@ -127,8 +127,11 @@ function drawChart(teamPickedInDropDown) {
       chartGroup.html("") 
       chartGroup.append("g")
           .classed("x-axis", true)
-          .attr("transform", `translate(0, ${height})`)
+          .attr("transform", `translate(0, ${height})`) 
           .call(bottomAxis);
+
+
+
           
       chartGroup.append("g")
           .call(leftAxis);
@@ -285,7 +288,7 @@ function gridPlotY(xMax, xMin, yAve, yMax, yMin){
   var dataArray = [
         // { x: xAve, y: yMax },
         // { x: xAve, y: yMin },
-        { x: xMax, y: yAve },
+        { x: xMax, y: (yAve) },
         { x: xMin, y: yAve },
 
   ];
