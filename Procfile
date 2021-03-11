@@ -1,2 +1,1 @@
-web: python app.py
-Dserver.port = $PORT
+web: gunicorn app2:app
