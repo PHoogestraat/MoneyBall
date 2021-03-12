@@ -88,7 +88,7 @@ Over the 20-year period we examined, the Athletics won 1,729 regular season game
 The Athletics’ cost per win (total team salary expenditures/team wins) came out to $686,427. At first glance one would say wins are expensive. Consider though that average cost per win leaguewide during this period was $1,122,739. In short, the Athletics spent 31 percent less to win about 4.5 more games per season as compared to the rest of the league.
 When considering the disadvantages the Athletics franchise faces, objectively, it’s not unreasonable to conclude that the Moneyball approach has been a success over its two decades of implementation.
 
-										###
+[Sample Web](https://money-ball-demo-web.herokuapp.com/)									
 
 
 
