@@ -93,5 +93,9 @@ When considering the disadvantages the Athletics franchise faces, objectively, i
 ### Web Site								
 [Moneyball](https://money-ball-demo-web.herokuapp.com/)
 
-
+<b><div align = "center">![cover_art.png](presentation/images/cover_art.png)</div></b>
+<h3><b><div align = "center">Contributors</div></b></h3>
+<h4><b><div align = "center">Kevin Gray </div></b></h4>
+<h4><b><div align = "center">Paul Hoogestraat</div></b></h4>
+<h4><b><div align = "center">Kirk Kornegay </div></b></h4>
 
